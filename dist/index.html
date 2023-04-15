@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script defer src="./js/main.js"></script>
+
+	<title>FormData</title>
+</head>
+
+<body class="coffee">
+	<div class="decorate"></div>
+
+	<ul class="service-list">
+		<li class="service-item">
+			<button type="button" class="btn service-btn">Арабика</button>
+		</li>
+
+		<li class="service-item">
+			<button type="button" class="btn service-btn">Робуста</button>
+		</li>
+
+		<li class="service-item">
+			<button type="button" class="btn service-btn">Либерика</button>
+		</li>
+
+		<li class="service-item">
+			<button type="button" class="btn service-btn">Эксцельса </button>
+		</li>
+	</ul>
+
+	<div id="modal" class="container">
+		<h1 class="title">Заказать звонок</h1>
+
+		<p class="form-text">Оставьте заявку и специалист свяжется с Вами в ближайшее время!</p>
+
+		<form id="form" name="form">
+			<div class="form-control">
+				<input class="form-input" name="fio" type="text" required>
+				<label class="form-label">ФИО*</label>
+			</div>
+
+			<div class="form-control">
+				<input class="form-input" name="email" type="text" required>
+				<label class="form-label">Email*</label>
+			</div>
+
+			<div class="form-control">
+				<input class="form-input" name="phone" type="text" required>
+				<label class="form-label">Номер телефона*</label>
+			</div>
+
+			<input name="page" type="hidden" value="Кофе">
+
+			<input name="typeCoffee" type="hidden" value="">
+
+			<button type="submit" class="btn form-btn">Отправить</button>
+
+			<p class="form-text">Гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.</p>
+		</form>
+
+		<button type="button" class="btn container-btn">
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+</body>
+
+</html>
